@@ -7,8 +7,8 @@ rd %file% /S /Q
 type nul > %file%
 REM attrib -r -s -h /S /D %file%
 
-IF NOT EXIST "%file%" (
-	msg * ¡Ha ocurrido un error, los anuncios de tu Kindle no se han podido eliminar correctamente.!
-) ELSE (
+IF EXIST "%file%" (
 	msg * ¡Los anuncios de tu Kindle se han eliminado correctamente.!
+) ELSE (
+	msg * ¡Ha ocurrido un error, los anuncios de tu Kindle no se han podido eliminar.!
 )
