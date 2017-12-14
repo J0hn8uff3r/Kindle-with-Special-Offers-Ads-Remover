@@ -16,3 +16,4 @@ if exist %path%\* (
 	cls
 	echo Los anuncios de tu Kindle se han eliminado correctamente.
 )
+pause
