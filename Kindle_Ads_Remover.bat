@@ -8,9 +8,9 @@ type nul > %path%
 attrib -r -s -h /S /D %path%
 
 if exist %path%\* (
-	msg * Ha ocurrido un error, los anuncios de tu Kindle no se han podido eliminar.
+	msg * Ha ocurrido un error, los anuncios de tu Kindle NO se han podido eliminar.
 	cls
-	echo Ha ocurrido un error, los anuncios de tu Kindle no se han podido eliminar.
+	echo Ha ocurrido un error, los anuncios de tu Kindle NO se han podido eliminar.
 ) else (
 	msg * Los anuncios de tu Kindle se han eliminado correctamente.
 	cls
